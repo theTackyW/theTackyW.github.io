@@ -5,11 +5,6 @@
 <meta charset="utf-8">
 <title>Portfolio | Jacky Wang</title>
 
-
-<link rel="stylesheet" type="text/css" media="screen" href="css/iPicture.css"/>
-
-<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="js/jquery.ipicture.js"></script>
 <style>
 a:link, a:visited {
   background-color: black;
@@ -23,37 +18,43 @@ a:link, a:visited {
 a:hover, a:active {
   background-color: red;
 }
-</style>
-<style type="text/css">
-.demo{width:800px; margin:20px auto}
-.demo p{line-height:24px}
+html {
+  scroll-behavior: smooth;
+}
+table, th, td {
+  border: none;
+  border-radius: 10px;
+
+  color:white;
+}
 </style>
 </head>
 
 <body style="font-family:verdana;color:white;background-color:black"> 
-<table border="5" width=100% bordercolor="black">
+<table width=100%>
 <!--Header with logo-->
-<tr bgcolor="black"> <td colspan="7"> 
+<tr bgcolor="black"> <td colspan="5"> 
 <center>
-<div class="demo">
-	 
-	<div id="iPicture" data-interaction="hover">
-		<div class="ip_slide">
-			<img class="ip_tooltipImg" src="img/arduino_header.png">
-	
-
-			 <div class="ip_tooltip ip_img32" style="top: 30px; left: 389px;" data-button="moreblue" data-tooltipbg="bgblack" data-round="roundBgW" data-animationtype="ttb-slide">
-			<p class="xia">Arduino is an open-source prototyping platform based on easy&#45to&#45use hardware and software.</p>
-			</div>	 
-				
-		</div>
-	</div>
+	<table width=100% >
+		<tr>
+			<td rowspan="4" align="center" style="font-family:impact;"width=50%> <img img src="img/profile.jpg" height="500" width="500"></td>
+			<td align="center" style="font-family:impact;color:white;background-color:black;font-size:25px" width="300" height="200"> <a href= "#aboutme"><hr><center>About Me</center> </a> </td>
+			<td align="center" style="font-family:impact;color:white;background-color:black;font-size:25px" width="300" height="200"> <a href= "#project"><hr><center>Projects</center> </td>
+			<td align="center" style="font-family:impact;color:white;background-color:black;font-size:25px" width="300" height="200"> <a href= "#music"> <hr><center>Music</center></td>
+		</tr>
+		<tr>
+			<td colspan="7"align="left" style="font-family:impact;color:white;background-color:black;font-size:50px" width="300"> I'm Jacky Wang.</td>
+		</tr>
+		<tr> 
+			<td colspan="7"style="font-family:impact;color:white;background-color:black;font-size:20px">Electrical Engineer.  Computer Scientist.  Music Enthusiastic.</td>
+		</tr>
+		<tr>
+			<td height="250"></td>
+		</tr>
+	</table>
 </center>
 </div>
 
-<script type="text/javascript">
-$( "#iPicture" ).iPicture();
-</script>
 
 </div>
 <!--All code above and related javascript/CSS file are from http://www.mycodes.net-->
@@ -61,60 +62,127 @@ $( "#iPicture" ).iPicture();
 </tr>
 <!-- navigation menu: 5 cells and 2 ads -->
 <tr> 
-<td rowspan ="2" bgcolor="black"><center></center></td> <!--Left ADS-->
-<td align="center" style="font-family:verdana;color:white;background-color:black" width="300"> <a href= "index.html"><hr><center>About Me</center> </a> </td>
-<td align="center" style="font-family:verdana;color:white;background-color:black" width="300"> <a href= "history.html"><hr><center>Project</center> </td>
-<td align="center" style="font-family:verdana;color:white;background-color:black" width="300"> <a href= "what.html"> <hr><center>Performance</center></td>
-<td rowspan ="2" bgcolor="black"><center></center></td> <!--Right ADS-->
+<td rowspan ="7" bgcolor="black"><center></center></td> <!--Left ADS-->
+<td align="center"></td>
+<td rowspan ="7" bgcolor="black"><center></center></td> <!--Right ADS-->
+<!-- spacing between titles and content -->
 <!-- main area: where content goes -->
+<tr>
+	<td height="100" id="aboutme"style="font-family:impact;font-size:30px"><center>About Me</center></td>
+</tr>
 <tr> 
-<td colspan="3" style="font-family:verdana;color:white;background-color:black" width="300"><center>Do you usually forget your key? One of the member of the Arduino Community
- has come uo with a way to open your door with a simple hand gesture while holding your smartphone based on Arduino Uno.
+<td  style="font-family:Georgia;color:white;background-color:#3C3C3C;font-size:20px;" width=85% height="550">
+	<table>
+	<tr>
+	<td height="550"><img src="img/profile.jpg" height="300" width="300"></td>
+	<td height="550">
+	<p style="font-family:Georgia;font-size:30px;">
+		<b>Siqi "Jacky" Wang</b>
+	</p>
+	<p><center>
+	As an electrical engineer and a music lover, I want to develop a path to take advantage of 
+	and utilize what I have learned in my undergraduate engineering education to expand the limit 
+	of technologies used in the music industry. </center>
+	</p>
+	</td>
+	</tr>
+	</table>
+</td>
+</tr>
 
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/oB-9HPkh9Mg" frameborder="0" allowfullscreen></iframe>
-<!--video from Youtube.com-->
-</p>
+<tr>
+	<td height="100" id="project"style="font-family:impact;font-size:30px;background-color:black;"><center>Projects</center></td>
+</tr>
+<tr> 
+<td  style="font-family:Georgia;color:white;background-color:black;font-size:20px" width=85% height="550">
+	<table width=100%>
+	<tr>
+	<td height="550" width=30% style="background-color:#3C3C3C;">
+		<p>
+			The Laser Jammer
+		</p>
+	</td>
+	<td width=5% ></td>
+	<td height="550" width=30% style="background-color:#3C3C3C;">
+		<p>
+			Senior Design - Digitally Controlled Analog EQ
+		</p>
+	</td>
+	<td width=5% ></td>
+	<td height="550" width=30% style="background-color:#3C3C3C;">
+		<p>
+			Password Alarm System
+		</p>
+	</td>
+	</tr>
+	</table>
+</td>
+</tr>
 
-<p> To accomplish this, Negm uses an Arduino Uno, a servo motor to move the bolt,
- and a 1Sheeld to interface with the smartphone. The 1Sheeld reads the device&#39s accelerometer data,
- and then activates the servo when it recognizes a predefined gesture.
- </p></center>
-
-<p><h2>What is Arduino?</h2></p>
-
-<p>
-Arduino is an open-source prototyping platform based on easy&#45to&#45use hardware and software.
- Arduino boards are able to read inputs &#45 light on a sensor,
- a finger on a button, or a Twitter message &#45 and turn it into an output &#45 activating a motor,
- turning on an LED, publishing something online. You can tell your board what to do by sending a set
- of instructions to the microcontroller on the board.
-</p>
-
-<center><img src="img/arduino_home.png" height="356" width="512"></center>
-
-<p>
-Thanks to its simple and accessible user experience, 
-Arduino has been used in thousands of different projects and 
-applications. The Arduino software is easy&#45to&#45use for beginners,
- yet flexible enough for advanced users. It runs on Mac, Windows,
- and Linux. Teachers and students use it to build low cost scientific
- instruments, to prove chemistry and physics principles, or to get
- started with programming and robotics. Designers and architects
- build interactive prototypes, musicians and artists use it for
- installations and to experiment with new musical instruments. Makers,
- of course, use it to build many of the projects exhibited at the 
- Maker Faire, for example. Arduino is a key tool to learn new things.
- Anyone &#45 children, hobbyists, artists, programmers &#45 can start 
- tinkering just following the step by step instructions of a kit,
- or sharing ideas online with other members of the Arduino community.
-</p>
-
+<tr>
+	<td height="100" id="music"style="font-family:impact;font-size:30px;background-color:black;"><center>Music</center></td>
+</tr>
+<tr> 
+<td  style="font-family:Georgia;color:white;background-color:#3C3C3C;font-size:20px"height="550">
+	<table width=100%>
+	<tr>
+	<td height="450" width=%30 style="background-color:#3C3C3C;">
+		<center>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/qvYpBORpYvM?start=1908" 
+		title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+		allowfullscreen>
+		</iframe>
+		<p>
+			Puttin On the Ritz
+		</p>
+		</center>
+	</td>
+	<td width=%5 ></td>
+	<td height="450" width=%30 style="background-color:#3C3C3C;">
+		<center>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/vO507qvAoWE?start=2037"
+		title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+		allowfullscreen>
+		</iframe>
+		<p>
+			Blues Minor
+		</p>
+		</center>
+	</td>
+	</tr>
+	<tr>
+	<td height="450" width=%30 style="background-color:#3C3C3C;">
+		<center>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/qvYpBORpYvM?start=1605"
+		title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+		allowfullscreen>
+		</iframe>
+		<p>
+			Jesus Rolls A Strike
+		</p>
+		</center>
+	</td>
+	<td width=%5 ></td>
+	<td height="450" width=%30 style="background-color:#3C3C3C;">
+		<center>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/d1xCDXBrwpk?start=3397"
+		title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+		allowfullscreen>
+		</iframe>
+		<p>
+			Big Swing Face
+		</p>
+		</center>
+	</td>
+	</tr>
+	</table>
+	
+	
 </td>
 </tr>
 
 <!-- footer -->
-<tr> <td colspan="7"style="font-family:verdana;color:white;background-color:black"> <hr><center>By Jacky Wang | 2021</center> </td>
+<tr> <td colspan="7"style="font-family:Georgia;color:white;background-color:black"> <hr><center>By Jacky Wang | 2021</center> </td>
 </tr>
 </table>
 
