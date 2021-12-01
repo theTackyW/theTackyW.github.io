@@ -18,6 +18,18 @@ a:link, a:visited {
 a:hover, a:active {
   background-color: red;
 }
+a.project:link, a.project:visited {
+  background-color: #3C3C3C;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.project:hover, a.project:active {
+  background-color: red;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -36,14 +48,14 @@ table, th, td {
 <tr bgcolor="black"> <td colspan="5"> 
 <center>
 	<table width=100% >
-		<tr>
-			<td rowspan="4" align="center" style="font-family:impact;"width=50%> <img img src="img/profile.jpg" height="500" width="500"></td>
-			<td align="center" style="font-family:impact;color:white;background-color:black;font-size:25px" width="300" height="200"> <a href= "#aboutme"><hr><center>About Me</center> </a> </td>
-			<td align="center" style="font-family:impact;color:white;background-color:black;font-size:25px" width="300" height="200"> <a href= "#project"><hr><center>Projects</center> </td>
-			<td align="center" style="font-family:impact;color:white;background-color:black;font-size:25px" width="300" height="200"> <a href= "#music"> <hr><center>Music</center></td>
+		<tr height=100%>
+			<td rowspan="4" align="center" style="font-family:impact;"width=50% height=100%> <img img src="img/profile.jpg" height="500" width="500"></td>
+			<td align="center" style="font-family:impact;color:white;background-color:black;font-size:25px" width="300"> <a href= "#aboutme"><hr><center>About Me</center> </a> </td>
+			<td align="center" style="font-family:impact;color:white;background-color:black;font-size:25px" width="300"> <a href= "#project"><hr><center>Projects</center> </td>
+			<td align="center" style="font-family:impact;color:white;background-color:black;font-size:25px" width="300"> <a href= "#music"> <hr><center>Music</center></td>
 		</tr>
 		<tr>
-			<td colspan="7"align="left" style="font-family:impact;color:white;background-color:black;font-size:50px" width="300"> I'm Jacky Wang.</td>
+			<td colspan="7"align="left" style="font-family:impact;color:white;background-color:black;font-size:50px" width="300" > I'm Jacky Wang.</td>
 		</tr>
 		<tr> 
 			<td colspan="7"style="font-family:impact;color:white;background-color:black;font-size:20px">Electrical Engineer.  Computer Scientist.  Music Enthusiastic.</td>
@@ -62,29 +74,32 @@ table, th, td {
 </tr>
 <!-- navigation menu: 5 cells and 2 ads -->
 <tr> 
-<td rowspan ="7" bgcolor="black"><center></center></td> <!--Left ADS-->
+<td rowspan ="7" bgcolor="black"><center></center></td> <!--Left-->
 <td align="center"></td>
-<td rowspan ="7" bgcolor="black"><center></center></td> <!--Right ADS-->
+<td rowspan ="7" bgcolor="black"><center></center></td> <!--Right-->
 <!-- spacing between titles and content -->
 <!-- main area: where content goes -->
 <tr>
 	<td height="100" id="aboutme"style="font-family:impact;font-size:30px"><center>About Me</center></td>
 </tr>
 <tr> 
-<td  style="font-family:Georgia;color:white;background-color:#3C3C3C;font-size:20px;" width=85% height="550">
+<td  style="font-family:Georgia;color:white;background-color:#3C3C3C;font-size:20px;" width=95% height="550">
 	<table>
 	<tr>
+    <td width=12%></td>
 	<td height="550"><img src="img/profile.jpg" height="300" width="300"></td>
-	<td height="550">
+    <td width=10%></td>
+	<td height="550" width=40%>
 	<p style="font-family:Georgia;font-size:30px;">
 		<b>Siqi "Jacky" Wang</b>
 	</p>
-	<p><center>
+	<p>
 	As an electrical engineer and a music lover, I want to develop a path to take advantage of 
 	and utilize what I have learned in my undergraduate engineering education to expand the limit 
-	of technologies used in the music industry. </center>
+	of technologies used in the music industry.
 	</p>
 	</td>
+    <td width=10%></td>
 	</tr>
 	</table>
 </td>
@@ -97,22 +112,58 @@ table, th, td {
 <td  style="font-family:Georgia;color:white;background-color:black;font-size:20px" width=85% height="550">
 	<table width=100%>
 	<tr>
-	<td height="550" width=30% style="background-color:#3C3C3C;">
-		<p>
-			The Laser Jammer
-		</p>
+	<td height="550" width=30% style="background-color:#3C3C3C;"><a class="project" href= "./laserJammer.html">
+        <table width=100% height=100%>
+        <tr height=10%><td></td></tr>    
+        <tr height=50%><td>
+            <center>
+            <img src="img/laserJammer.jpg" height="200" width="200">
+            <p>
+			<b>The Laser Jammer</b>
+		    </p>
+        </center></td></tr>
+        <tr><td style="vertical-align:top">
+        <p><center>
+            A MIDI string intrument that triggers notes with lasers and soft-potentiometers
+        </center></p>
+        </tr></td>
+        </table>
 	</td>
 	<td width=5% ></td>
-	<td height="550" width=30% style="background-color:#3C3C3C;">
-		<p>
-			Senior Design - Digitally Controlled Analog EQ
-		</p>
+	<td height="550" width=30% style="background-color:#3C3C3C;"><a class="project" href= "./AT.html">
+        <table width=100% height=100%>
+        <tr height=10%><td></td></tr>    
+        <tr height=50%><td>
+            <center>
+            <img src="img/AT.jpg" height="200" width="200">
+            <p>
+			<b>Digitally Controlled Analog Equalizer</b>
+		    </p>
+        </center></td></tr>
+        <tr><td style="vertical-align:top">
+        <p><center>
+            An analog equalizer that can be controlled using a VST plugin via USB
+        </center></p>
+        </tr></td>
+        </table>
 	</td>
 	<td width=5% ></td>
-	<td height="550" width=30% style="background-color:#3C3C3C;">
-		<p>
-			Password Alarm System
-		</p>
+	<td height="550" width=30% style="background-color:#3C3C3C;"><a class="project" href= "./passAlarm.html">
+        <table width=100% height=100%>
+        <tr height=10%><td></td></tr>    
+        <tr height=50%><td>
+            <center>
+            <img src="img/passAlarm.png" height="200" width="200">
+            <p>
+            <b>Password Alarm System</b>
+            </p>
+        </center></td></tr>
+        <tr><td style="vertical-align:top">
+        <p><center>
+            A security system that protect artwork with IR-alarm and password
+        </center></p>
+        </tr></td>
+        </table>
 	</td>
 	</tr>
 	</table>
