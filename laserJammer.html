@@ -18,12 +18,14 @@ a:link, a:visited {
 a:hover, a:active {
   background-color: red;
 }
-
+p.cap{
+    impact;font-size:15px;
+}
 html {
   scroll-behavior: smooth;
 }
 table, th, td {
-  border: 1px solid;
+  border: none;
   border-radius: 10px;
 
   color:white;
@@ -34,14 +36,14 @@ table, th, td {
 <body style="font-family:verdana;color:white;background-color:black"> 
 <table width=100%>
 <!--Header with logo-->
-<tr bgcolor="black"> <td colspan="5"> 
+<tr bgcolor="black"><td colspan="5"> 
 <center>
 	<table width=100% >
 		<tr height=100%>
-			<td  align="center" style="font-family:impact;"width=50% height=100%> </td>
-			<td align="center" style="font-family:impact;color:white;background-color:black;font-size:25px" width="300"> <a href= "#aboutme"><hr><center>About Me</center> </a> </td>
-			<td align="center" style="font-family:impact;color:white;background-color:black;font-size:25px" width="300"> <a href= "#project"><hr><center>Projects</center> </td>
-			<td align="center" style="font-family:impact;color:white;background-color:black;font-size:25px" width="300"> <a href= "#music"> <hr><center>Music</center></td>
+			<td  align="center" style="font-family:impact;font-size:30px"width=50% height=100%> <center>Jacky Wang | Portfolio </center></td>
+			<td align="center" style="font-family:impact;color:white;background-color:black;font-size:25px" width="300"> <a href= "./index.html#aboutme"><hr><center>About Me</center> </a> </td>
+			<td align="center" style="font-family:impact;color:white;background-color:black;font-size:25px" width="300"> <a href= "./index.html#project"><hr><center>Projects</center> </td>
+			<td align="center" style="font-family:impact;color:white;background-color:black;font-size:25px" width="300"> <a href= "./index.html#music"> <hr><center>Music</center></td>
 		</tr>
 
 	</table>
@@ -52,23 +54,133 @@ table, th, td {
 
 <hr> </td>
 <tr>
-    <td rowspan ="3" bgcolor="black"><center></center></td> <!--Left-->
+    <td rowspan ="6" bgcolor="black"><center></center></td> <!--Left-->
     <td align="center"></td>
-    <td rowspan ="3" bgcolor="black"><center></center></td> <!--Right-->
+    <td rowspan ="6" bgcolor="black"><center></center></td> <!--Right-->
     <!-- spacing between titles and content -->
 
     <tr>
-    	<td height="100" id="music"style="font-family:impact;font-size:30px;background-color:black;"><center>The Laser Jammer</center></td>
+    	<td height="100" style="font-family:impact;font-size:30px;background-color:black;"width =85%><center>The Laser Jammer</center></td>
+    </tr>
+    <tr style="background-color:#3C3C3C">
+    	<td height="100" style="font-family:Georgia;font-size:20px;">
+            <p style="font-family:Georgia;font-size:30px;">
+                <center><b> Introduction </b></center></p>
+                <p> 
+                    The Lasser Jammer is a MIDI instrument that allows musicians to trigger music notes with laser strings.
+                </p>
+                <p style="font-family:Georgia;font-size:23px;"><b>People</b><p>
+                    <p><b>Jacky Wang:</b> Tufts University, Electrical Engineering, 2022</p>
+                    <p><b>Bailey Halbreich:</b> Tufts University, Mechanical Engineering, 2022</p>
+                    <p><b>Rachel Brennan:</b> Tufts University, Mechanical Engineering, 2023</p>
+                    <p><b>Chalotte Nanteza:</b> Tufts University, Music, 2022</p>
+                <p>There are two versions<p/>
+                <p><a href= "./laserJammer.html#V1.0"><b>V 1.0 (Released on Nov.16, 2021)</a></b></p>
+                <center><img src="img/laserJammer.jpg" height="400" width="400"></center>
+                <p>The idea is to create a briefcase-like device that, when unfolded, allows the user easy access to three separate instruments at once. On each side, there will be six pairs of lasers and photocells, along with six linear soft pots underneath. Total 12 sets of lasers, photocells, and soft pots each represents a note in traditional western major scale. The soft pots are used to fade between two different instrument sounds, while blocking the lasers from the photocells can trigger the sounds.</p>
+                <p><a href= "./laserJammer.html#V2.0"><b>V 2.0 (Releasing on Dec.20, 2021)</a></b></p>
+                <center><img src="img/laserJammer2.jpg" height="400" width="400"></center>
+                <p>The idea of folding is abandon while the focus is shifted to more ergonomic design and more controls of the sounds. Volume, reverb, delay, and distrotion control are added. The softpots don't serve as fader between two sounds but become something like a fretboard on a guitar.</p>
+        </td>
     </tr>
     
-    <tr>
-    	<td height="100" id="music"style="font-family:Georgia;font-size:20px;"><center>
-        <p>
-            The laser jammer is very cool blabalbaldll
-        </p>
-        </center></td>
+    <tr style="background-color:#3C3C3C">
+        <td height="100" id="V1.0"style="font-family:Georgia;font-size:20px;">
+            <p style="font-family:verdana;font-size:40px;"><center><b> V1.0 </b></center></p>
+            
+            <p><b>Construction</b></p>
+            <p>
+                The construction started with 3-D modelling of the entire structure using SolidWorks. Then, the materials for each part were decided based on the shape and how easy they were to be processed differently. For example, the frames of the instrument were made of acrylic and processed using laser cutting because they are flat; while the laser and photocell holders were 3D-printed because they have more complex shapes. The mechanical design and construction were mostly done by Bailey.
+            </p>
+            <p><b>Circuitry</b></p>
+            <center><img src="./img/laserJamCc.png" height="400" width="800"><p class="cap"><b>Figure 1.1</b> Overall schematics</p></center>
+            <p>
+                There are two separated circuit systems in this instrument.
+            </p>
+            <p>
+                The first one is the lasers. Since the lasers consume much higher power than the sensors, we decided to power them separately. This circuit is very straight forward—just a resistor in series with a laser LED. The use of the resistors was to limit the current passing through the laser in the rated range.
+            </p>
+            <p>
+                The second part is the sensors. We divided all the sensors into 12 sets, with each set consisting of a soft pot, a photocell, and two 1k resistors. Figure 2 shows the schematics of a sensor set.
+            </p>
+            <center><img src="./img/laserJamSs.png" height="300" width="200"><p class="cap"><b>Figure 1.2</b> Sensor set schematics</p></center>
+            <p>
+                As shown in Figure 1.2, there is a 1k resistor connected in series between the soft pot and 5V with an Arduino’s analog pin reading the voltage drop at the soft pot. This design was based on range of resistance and Arduino’s reading range. For the photocell, it sits between 5V and a 1k resistor. An Arduino digital pin reads the voltage drop of the resistor. This is because the resistance of the photocell drops when it sees light which would increase the voltage at the digital pin. This way the Arduino would read a digital “1” when there’s light shining onto the photocell.
+            </p>
+            <p>
+                All circuits were realized by soldering parts and jump wires on solderable bread boards. Due to the limited amount of time, the wiring was a messy and the wires were all over the place which obviously causes noise. Fortunately, the circuits and sensors seemed to be fully functional.
+            </p>
+            <p><b>Functionality of the Max patch</b></p>
+            <p>
+                The Max patch uses the Arduino2Max block to perceive sensor data read by the Arduino to Max. The Arduino writes the data of each pin into a sentence in the order of “A0 A1 A2 A3 A4 A5 A6 A7 A8 A9 A10 A11 D22 D23 D24…D33” and sends the sentence to Serial every 15ms. The Arduino2Max block would then be able to parse this sentence into individual numbers and assign the numbers to their corresponding pins.
+            </p>
+            <p>
+                Each digital pin triggers a “select” block to send a specific number to a “noteon” block. Our design has 12 photocells corresponding to 12 digital values, which triggers C4, C#4 D4…A#4 B4. The velocity of all notes was set to be a constant 40.
+            </p>
+            <p>
+                Each soft pot controls a rotary knob of a Reason combinator. The Arduino’s digital pins are 10-bit and are capable of reading values from 0-1024. However, during testing we found out that our reading only has range of about 200 while each soft pot has different range. Therefore, each analog reading was mapped to 0-127 using a “scale” block and was calibrated separately.
+            </p>
+            <p><b>The Reason rack</b></p>
+            <p>
+                In Reason, there are 12 sets of identical subsystems. Each subsystem represents a string and is triggered by different MIDI channels. Each subsystem consists of a subtractor, a Thor, and a combinator. The subtractor and Thor represent different instrument sounds and are combined by the combinator. A rotary knob on the combinator can decrease the volume level of one while increasing that of the other. This way, we were able to fade between the sounds of two different instruments.
+            </p>
+            <p>
+                The Reason racks were designed a made mostly by Charlotte.
+            </p>
+            <p><b>What could have been done differently and future work</b></p>
+            <p>
+                Better time manage was necessary. The project was given 2 weeks of work time, but the team only started to be productive in the last 5 days. A lot of problems were detected (for examples, messy wires) but the team didn’t have time to debug, iterate, and reconstruct.
+            </p>
+            <p>
+                The triggering logic of string could be improved. Right now, a note is sent when the user’s finger blocks the laser light from the photocell (pressing/plucking the string) and the Arduino reads a “0”. However, this means multiple notes would be triggered if the finger stays between the laser and the photocell for longer time. This can be solved by building more complex Max patch. Also, the velocity of a note can be determined by a laser was blocked.
+            </p>
+            <p>
+                The sounds that this instrument can make is very inflexible. The only thing was fading between two different instrument sounds, while those sounds were constant. Maybe more knobs/analog sensors could be added to our instrument to adjust parameters of Reason devices to make more customizable sounds.
+            </p>
+            <p>
+                The overall ergonomic structure of the instrument could be improved. First, not all 12 strings were necessary on the instrument. We can use 6 strings and use the soft pots as bend wheels to mimic a guitar. Also, the horizontal orientation of the strings and soft pots is not very user-friendly. We can probably have the strings on only one door while having the soft pots oriented vertically on the other door. This should make the instrument more playable.
+            </p>
+            
     </tr>
-
+    
+    <tr style="background-color:#3C3C3C">
+        <td height="100" id="V2.0"style="font-family:Georgia;font-size:20px;">
+        <p style="font-family:verdana;font-size:30px;"><center><b> V2.0 </b></center></p>
+        
+    </tr>
+    
+    <tr><td style="background-color:#3C3C3C"><center>
+        <p><b>Demostration Video</b>
+        </p>
+        <table width=100%>
+    	<tr>
+    	<td height="450" width=%30 style="background-color:#3C3C3C;">
+    		<center>
+                <video width="320" height="240" controls> 
+                <source src="./vid/laserJam1.mp4" type="video/mp4">
+                </video>
+    		<p>
+    			The Laser Jammer 1.0
+    		</p>
+    		</center>
+    	</td>
+    	<td width=%5 ></td>
+    	<td height="450" width=%30 style="background-color:#3C3C3C;">
+    		<center>
+                <video width="320" height="240" controls> 
+                <source src="./vid/laserJam2.mp4" type="video/mp4">
+                </video>
+    		<p>
+    			The Laser Jammer 2.0 (Coming Soon)
+    		</p>
+    		</center>
+    	</td>
+    	</tr>
+    	</table>
+        
+        
+        
+    </center></td></tr>  
 </tr>
 
 <!-- footer -->
