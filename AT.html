@@ -18,6 +18,18 @@ a:link, a:visited {
 a:hover, a:active {
   background-color: red;
 }
+
+a.gray:link, a.gray:visited {
+  background-color: #3C3C3C;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a.gray:hover, a.gray:active {
+  background-color: red;
+}
 p.cap{
     impact;font-size:15px;
 }
@@ -54,24 +66,58 @@ table, th, td {
 
 <hr> </td>
 <tr>
-    <td rowspan ="4" bgcolor="black"><center></center></td> <!--Left-->
+    <td rowspan ="5" bgcolor="black"><center></center></td> <!--Left-->
     <td align="center"></td>
-    <td rowspan ="4" bgcolor="black"><center></center></td> <!--Right-->
+    <td rowspan ="5" bgcolor="black"><center></center></td> <!--Right-->
     <!-- spacing between titles and content -->
 
     <tr>
     	<td height="100" id="music"style="font-family:impact;font-size:30px;background-color:black;"width =85%><center>Digitally Controlled Analog Equalizer</center></td>
     </tr>
-    
+    <tr>
+    	<td height="100" id="music"style="font-family:verdana;font-size:20px;background-color:black;"width =85%>
+            <center><img src="./img/AT_logo.png" style="width:75%"></center>
+            <p style="font-family:impact;font-size:30px">The Team
+            <p><b>Jacky Wang:</b> Tufts University, Electrical Engineering major, Computer Science and Music Engineering minor</p> 
+            <p><b>Zev Pogrebin:</b> Tufts University, Electrical Engineering major</p>
+            <p><b>Corlene Rhoades:</b> Tufts University, Electrical Engineering and Computer Science major</p>
+            <p><b>Leyla Rami:</b> Tufts University, Electrical Engineering major</p>
+            <p><b>Arnav Gupta:</b> Tufts University, Electrical Engineering major</p>
+            <p><b>Matthew Trivigno:</b> Tufts University, Electrical Engineering major</p>
+        </td>
+    </tr>
+    <tr style="background-color:#3C3C3C">
+        <td>
+        <center><a class="gray" href="./(Project Proposal) AtomicTangerine_Deliverable_05_20210928_Rev01.pdf">Read our project proposal (click here)</a></center>
+        </td>
+    </tr>
     <tr style="background-color:#3C3C3C">
     	<td height="100" id="music"style="font-family:Georgia;font-size:20px;">
-        
+            <p>
+            </p>
+            <center><img src="./img/AT_System_Engineering_Diagram.png" style="width:75%"><p class="cap"><b>Overall System</b></p></center>
+            <p>
+                Our project consists with three subsystems --- a software plug-in, an embedded system, and an analog audio device which is going to be a parametric Equalizer.
+                A traditional analog EQ takes in audio source and send processed/filtered analog signal out (to other audio devices). Usually users would control its filter parameters using knobs/push buttons. However, our device is also going to be controlled digitally. 
+                A software plug-in we are designing can take user input and send to an embedded system. The embedded system will then convert them to analog signal to control the parameters the EQ. 
+                Audio signal processed by the EQ would also be sent back to the computer via ADC in the embedded system for monitoring. 
+
+            </p>
+            <p style="font-family:impact;font-size:30px;background-color:black;">Analog System Overview</p>
+            <center><img src="./img/AT_Analog_System_Overview.png" style="width:75%"></center>
+            <p style="font-family:impact;font-size:30px;background-color:black;">Embedded System Overview</p>
+            <center><img src="./img/AT_Embedded_Systems_Overview.png" style="width:75%"></center>
+            <p style="font-family:impact;font-size:30px;background-color:black;">Software System Overview</p>
+            <center><img src="./img/AT_Software_System_Overview.png" style="width:75%"></center>
+            <p style="font-size:40px">
+                <b>The project is currently under development and will be completed by April 2022.</b>
+            </p>
         </td>
     </tr>    
 </tr>
 
 <!-- footer -->
-<tr> <td colspan="7"style="font-family:Georgia;color:white;background-color:black"> <hr><center>By Jacky Wang | 2021</center> </td>
+<tr> <td colspan="7"style="font-family:Georgia;color:white;background-color:black"> <hr><center>By Jacky Wang | 2022</center> </td>
 </tr>
 </table>
 
